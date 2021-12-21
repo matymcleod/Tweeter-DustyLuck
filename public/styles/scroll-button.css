@@ -1,0 +1,18 @@
+button.scroll-up {
+  padding: 0.9em 1.05em;
+  margin: -1.5em;
+  border-radius: 50%;
+  background-color: rgb(255, 60, 0);
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  z-index: 1;
+  position: sticky;
+  top: 90%;
+  left: 90%;
+}
+
+button.scroll-up:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #7563317c;
+}

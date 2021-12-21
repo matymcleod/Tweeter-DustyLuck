@@ -1,0 +1,92 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+  font-size: 24px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+main {
+  width: 90%;
+}
+
+article.tweet {
+  margin: 2em 0;
+  border: solid 4px;
+}
+ 
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+
+article.tweet header span {
+  font-weight: 600;
+  color: #4b3481a2;
+}
+
+ article.tweet header div {
+   display: flex;
+   align-items: center;
+}
+
+ article.tweet header div span {
+   margin-left: 0.5em;
+   color: #545149;
+}
+
+article.tweet p {
+  margin: 2em;
+}
+
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  border-top: solid 4px;
+  padding-top: 1em;
+}
+
+article.tweet footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+article.tweet footer div i.fas {
+  color: #35cf7098;
+  margin: 0 0.1em;
+}
+
+article:hover {
+  box-shadow: 5px 5px 10px #7563317c;
+}
+
+article.tweet footer div i.fas:hover {
+  color: rgb(255, 60, 0);
+  cursor: pointer;
+}

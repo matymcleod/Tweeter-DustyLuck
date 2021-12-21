@@ -1,0 +1,71 @@
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4b3481;
+  }
+  
+  body {
+    flex-direction: row;
+  }
+  
+  header.body-header {
+    width: 40%;
+    height: 29.5em;
+    justify-content: center;
+    margin: 0 0.3em 0 2.3em;
+    align-self: flex-start;
+    border-radius: 1em;
+    position: sticky;
+    top: 19.6%;
+  }
+
+  main {
+    margin: 6em 2em 4em 2em;
+  }
+
+  button.scroll-up {
+    top: 90%;
+    left: 92%;
+    margin: -1.425em;
+  }
+  
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+
+  nav {
+    background-color: transparent;
+    color: #4b3481;
+    height: 4em;
+  }
+
+  span.logo {
+    padding: 0 0.7em;
+  }
+
+  nav div span {
+    font-size: 1.1rem;
+    color: #545149;
+    margin-top: 1.2em;
+  }
+
+  header.body-header div img {
+    width: 12em;
+  }
+
+  section.new-tweet button {
+    background-color: #4b3481;
+  }
+
+  button.scroll-up {
+    left: 88%;
+    top: 90%;
+  }
+}
